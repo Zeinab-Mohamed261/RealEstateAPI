@@ -14,6 +14,7 @@ namespace RealEstateAPI.Service.Services
     public class PropertyService : IPropertyService
     {
         private readonly AppDbContext _context;
+        private readonly string _defaultImageUrl = "default-image.jpg"; // Default image URL    
 
         public PropertyService(AppDbContext context)
         {
